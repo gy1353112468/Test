@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Aaron Ko博客</title>
@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="CSS/MyStyle.css">
 </head>
 <body>
+    <div class="topfixed" style="display: none">
+        <a href="javascript:void (0)" onclick="GoTo('#_top')">
+            <img src="Img/backtop.jpg"/>
+        </a>
+    </div>
     <header>
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center" id="_top">
                 <img src="Img/bg1.jpg" class="img-responsive"/>
                 <img src="Img/bg2.jpg" class="img-responsive" style="opacity: 0;"/>
                 <img src="Img/bg3.jpg" class="img-responsive" style="opacity: 0;"/>
@@ -23,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-default" id="_nav">
+        <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
                     <span class="navbar-brand"><a href="#">Aaron Ko博客</a></span>
@@ -36,12 +41,12 @@
                 </div>
                 <div class="navbar-collapse collapse navbar-right" id="navbar">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">关于我</a></li>
-                        <li><a href="#">求职意向</a></li>
-                        <li><a href="#">作品集</a></li>
-                        <li><a href="#">技术掌握</a></li>
-                        <li><a href="#">学习经历</a></li>
-                        <li><a href="#">联系我</a></li>
+                        <li><a href="javascript:void(0)" onclick="GoTo('#_nav')">关于我</a></li>
+                        <li><a href="javascript:void (0)" onclick="GoTo('#_jobwanted')">求职意向</a></li>
+                        <li><a href="javascript:void(0)" onclick="GoTo('#samplereel')">作品集</a></li>
+                        <li><a href="javascript:void(0)" onclick="GoTo('#_skill')">技术掌握</a></li>
+                        <li><a href="javascript:void(0)" onclick="GoTo('#_learning')">学习经历</a></li>
+                        <li><a href="javascript:void(0)" onclick="GoTo('#_contaction')">联系我</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +54,7 @@
     </header>
     <main>
         <div class="container text-center">
-            <div class="row">
+            <div class="row" id="_nav">
                 <div class="col-md-12">
                     <h1 class="lead">关于我</h1>
                     <hr>
@@ -58,7 +63,7 @@
                     <p class="text-left">我叫高阳，22岁，坐标宁波，是一名前端未入门小白。前端是一门有容乃大的行业，我并不是计算机专业出生，只是怀着一分对于IT行业的热爱，开始了我的前端学习之旅。 在上一份工作当中，很庆幸接触到一位IT资深工作者，算是我的一位启蒙老师，是他让我了解到了许多有关这份行业的资讯，坚定我转业的信心，带我跨出了第一步，更是引导我学习了部分JAVA的基础知识。值得庆幸的是JS与JAVA很相像，给我很大的信心来学习。</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="_jobwanted">
                 <div class="col-md-12">
                     <h1 class="lead">求职意向</h1>
                     <hr>
@@ -88,25 +93,122 @@
                     <p>切图是前端工作者必备技能之一，希望在工作中，我可以学习到更多有关于切图的方法，提升工作效率。</p>
                 </div>
             </div>
-            <div class="row">
+            <div class="row"  id="samplereel">
                 <div class="col-md-12">
                     <h1 class="lead">作品集</h1>
                     <hr>
                 </div>
             </div>
             <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="bg-container">
+                        <img src="Img/spl1.jpg" class="img-responsive"/>
+                        <div class="bg-content">
+                            <span class="bg-font">静态网站</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="bg-container">
+                        <img src="Img/spl1.jpg" class="img-responsive"/>
+                        <div class="bg-content">
+                            <span class="bg-font">静态网站</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="bg-container">
+                        <img src="Img/spl3.jpg" class="img-responsive"/>
+                        <div class="bg-content">
+                            <span class="bg-font">静态网站</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="bg-container">
+                        <img src="Img/spl4.jpg" class="img-responsive"/>
+                        <div class="bg-content">
+                            <span class="bg-font">静态网站</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="_skill">
                 <div class="col-md-12">
                     <h1 class="lead">技术掌握</h1>
                     <hr>
                 </div>
             </div>
             <div class="row">
+                <div class="col-md-3 col-sm-6" id="circleProgress">
+                    <div class="circle-wrapper">
+                        <div class="left-container"><div class="wrapper-left"></div></div>
+                        <div class="right-container"><div class="wrapper-right"></div></div>
+                        <span class="numnber">0</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="circle-wrapper">
+                        <div class="left-container"><div class="wrapper-left"></div></div>
+                        <div class="right-container"><div class="wrapper-right"></div></div>
+                        <span class="numnber">0</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="circle-wrapper">
+                        <div class="left-container"><div class="wrapper-left"></div></div>
+                        <div class="right-container"><div class="wrapper-right"></div></div>
+                        <span class="numnber">0</span>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="circle-wrapper">
+                        <div class="left-container"><div class="wrapper-left"></div></div>
+                        <div class="right-container"><div class="wrapper-right"></div></div>
+                        <span class="numnber">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="_learning">
                 <div class="col-md-12">
                     <h1 class="lead">工作经历</h1>
                     <hr>
                 </div>
+                <div class="col-md-12">
+                    <div class="learn-container">
+                        <div class="container-top">
+                            <div class="ly-university">
+                                <a href="http://www.lyu.edu.cn/"><img src="Img/lyuniversity.jpg" class="img-responsive"/></a>
+                                <span>毕业于:临沂大学</span>
+                            </div>
+                            <div class="circle">
+                                <span>2018.9</span>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="container-middle">
+                            <div class="jy-job">
+                                <span>毕业后的第一份工资：</br>金源集团，从事研发设计工作</span>
+                                <a href="http://cn.jinyuan.com/"><img src="Img/jyjob.png"class="img-responsive"/></a>
+                            </div>
+                            <div class="circle">
+                                <span>2018.9</span>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="container-bottom">
+                            <div class="gr-job">
+                                <a href="http://www.chinaspray.com/"><img src="Img/grjob.jpg"/></a>
+                                <span>就职于：</br>宁波金雨科技有限公司</span>
+                            </div>
+                            <div class="circle">
+                                <span>2018.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
+            <div class="row" id="_contaction">
                 <div class="col-md-12">
                     <h1 class="lead">联系我</h1>
                     <hr>
