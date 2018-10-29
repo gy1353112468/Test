@@ -1,0 +1,256 @@
+html, body{
+    height: 100%;
+	background-color: #ffd200;
+	position: relative;
+	overflow: hidden;
+}
+.loading-home{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #1b1b1b;
+}
+.circle{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background-color: #ffd200;
+	position: absolute;
+	margin: auto;
+	top: -5000px;
+	left: -5000px;
+	bottom: -5000px;
+	right: -5000px;
+}
+.active{
+	-webkit-animation: circleScale 1s linear forwards;
+	-o-animation: circleScale 1s linear forwards;
+	animation: circleScale 1s linear forwards;
+}
+@keyframes circleScale {
+	from{height: 120px;width: 120px;}
+	to{height: 5000px;
+		width: 5000px;}
+}
+.loading-home > img{
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 2;
+}
+header{
+	height: 10%;
+    padding-top: 20px;
+	opacity: 0;
+}
+.opacityPlay{
+	-webkit-animation: opacity 0.5s linear forwards;
+	-o-animation: opacity 0.5s linear forwards;
+	animation: opacity 0.5s linear forwards;
+}
+@keyframes opacity {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+header .navbar-default{
+    background-color: #ffd200;
+    border: none;
+}
+header .container, main .container{
+    width: 98%;
+}
+header .navbar-default > .container > .navbar-header a{
+    color: #333333;
+    font-size: 35px;
+}
+header .navbar-default > .container > .navbar-header a:hover{
+    text-decoration: none;
+}
+header .navbar-default > .container > .navbar-collapse li{
+    line-height: 50px;
+}
+header .navbar-default > .container > .navbar-collapse a{
+    color: #333333;
+    font-weight: 600;
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 15px;
+}
+header .navbar-default > .container > .navbar-collapse a:hover{
+    border-bottom: 1px solid #000;
+    padding-bottom: 3px;
+}
+header .navbar-default > .container > .navbar-header > .navbar-toggle{
+    border: none;
+}
+header .navbar-default > .container > .navbar-header > .navbar-toggle > span{
+    background-color: #000;
+}
+header .navbar-default .navbar-toggle:hover{
+	background-color: transparent;
+}
+.navbutton{
+	-webkit-animation: navButton 0.5s forwards;
+	-o-animation: navButton 0.5s forwards;
+	animation: navButton 0.5s forwards;
+}
+@keyframes navButton {
+	from{background-color: #ffd200;}
+	to{background-color: #1b1b1b;}
+}
+main{
+	width: 100%;
+	height: 85%;
+	position: relative;
+	display: flex;
+}
+#nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    height: 1000px;
+    width: 360px;
+    font-size: 20px;
+    background-color: #1b1b1b;
+    z-index: 3;
+	opacity: 0;
+	text-align: center;
+}
+#nav ul{
+    width: 98%;
+    text-align:right;
+    list-style-type: none;
+	position: relative;
+	right: 0;
+	padding-right: 15px;
+}
+#nav > ul > li > a{
+    color: #fff;
+    text-decoration: none;
+}
+.navColor{
+	-webkit-animation: navColor 0.5s forwards;
+	-o-animation: navColor 0.5s forwards;
+	animation: navColor 0.5s forwards;
+}
+@keyframes navColor {
+	from{opacity: 0;}
+	to{opacity: 0.9;}
+}
+.navfontColor{
+	-webkit-animation: navfontColor 0.5s forwards;
+	-o-animation: navfontColor 0.5s forwards;
+	animation: navfontColor 0.5s forwards;
+}
+@keyframes navfontColor {
+	from{color: #000;}
+	to{color: #fff;}
+}
+main > .container{
+    width: 98%;
+	align-self: center;
+}
+.buttonspan{
+	-webkit-animation: buttonspan 0.5s forwards;
+	-o-animation: buttonspan 0.5s forwards;
+	animation: buttonspan 0.5s forwards;
+}
+@keyframes buttonspan {
+	from{background-color: #000;}
+	to{background-color: #fff;}
+}
+.plane-wrapper{
+	width: auto;
+	height: auto;
+	position: relative;
+	left: 3000px;
+}
+.planeMove{
+	-webkit-animation: planeMove 0.5s linear forwards;
+	-o-animation: planeMove 0.5s linear forwards;
+	animation: planeMove 0.5s linear forwards;
+}
+@keyframes planeMove {
+	from{
+		left: 3000px;
+	}
+	to{
+		left: 0;
+	}
+}
+.planePlay{
+    -webkit-animation: planePlay 6s infinite;
+    -o-animation: planePlay 6s infinite;
+    animation: planePlay 6s infinite;
+}
+@keyframes planePlay {
+    0%{left: 0; top: 0;}
+    50%{left:-15px; top:-15px;}
+    100%{left: 0; top: 0;}
+}
+#propeller{
+	position: absolute;
+	top: 51.7003%;
+	left: 13.1%;
+	-webkit-animation: propellerRotate 0.1s infinite;
+	-o-animation: propellerRotate 0.1s infinite;
+	animation: propellerRotate 0.1s infinite;
+}
+@keyframes propellerRotate {
+	from{transform: rotate(0deg);}
+	to{transform: rotate(360deg);}
+}
+#plane, #propeller{
+	margin: 0 auto;
+}
+.note{
+	font-family: roboto slab,helvetica neue,Helvetica,hiragino sans gb,Arial,sans-serif;
+	line-height: 40px;
+    padding-left: 30px;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #000;
+}
+@media(max-width: 768px){
+    .note #notep{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .opacity_play p{
+        font-size: 3px;
+    }
+}
+#notep span{
+    color: #000;
+    -webkit-animation: blink 0.3s infinite;
+    -o-animation: blink 0.3s infinite;
+    animation: blink 0.3s infinite;
+}
+@keyframes blink {
+    0%{color: #000;}
+    50%{color: #ffd200;}
+    100%{color: #000;}
+}
+footer{
+	opacity: 0;
+	height: 5%;
+}
+footer > p{
+	font-size: 12px;
+	color: #000;
+	margin: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
