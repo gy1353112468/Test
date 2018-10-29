@@ -1,0 +1,100 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; }
+body { font-size:16px; color:#666; font-family:Verdana, Microsoft YaHei, Simsun; background:#fff; line-height:24px; }
+fieldset, img { border:0; }
+ol, ul { list-style:none; }
+h1, h2, h3, h4, h5, h6{ font-size:100%; }
+em { font-style:normal; }
+input, button, select, textarea { outline:none; }
+textarea { resize:none; }
+p{ text-align:justify; text-justify:distribute;}
+
+body{
+	width: 100%;
+	height: auto;
+	background-color: #f2f2f2;
+}
+.head{
+	width: 1152px;
+	height: 81px;
+	margin: 0 auto;
+}
+.logo{
+	width: 175px;
+	height: 81px;
+	float: left;
+}
+.nav{
+	width: 606px;
+	height: 81px;
+	margin: 0 25px;
+	display: inline-block;
+}
+.nav li{
+	float: left;
+	width: 139px;
+	height: 81px;
+	line-height: 81px;
+	text-align: center;
+	position: relative;
+}
+.nav a{
+	width: 139px;
+	height: 81px;
+	display: block;
+	text-decoration: none;
+	color: black;
+}
+.nav ul li:hover a{
+	color: white;
+	background-color: black;
+}
+.nav ul ul{
+	position: absolute;
+	display: none;
+}
+.nav ul ul li{
+
+}
+.language{
+	float: right;
+}
+.language a{
+	text-align: center;
+	text-decoration: none;
+	line-height: 81px;
+	width: 81px;
+	height: 81px;
+	display: block;
+	color: white;
+	background-color: black;
+}
+.Img{
+	position: relative;
+	width: 1280px;
+	padding-bottom: 39.5%;
+	margin: 0 auto;
+}
+.Img img{
+	margin: auto auto;
+	position: absolute;
+	max-width: 100%;
+	max-height: 100%;
+	z-index: -1;
+}
+.cir{
+	height: 8px;
+	width: 47px;
+	position: relative;
+	margin: 0 auto;
+	top: 50%;
+}
+.cir div{
+	border-radius: 50%;
+	width: 8px;
+	height: 8px;
+	background-color: white;	
+	float: left;
+	margin-right: 5px;
+	opacity: 0.8;
+}
+
