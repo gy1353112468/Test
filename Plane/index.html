@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plane</title>
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myStyle.css">
+
+</head>
+<body>
+    <div class="loading-home">
+        <img class="loading-gif" src="Img/loading-Home.gif"/>
+        <div class="circle"></div>
+    </div>
+    <div id="nav">
+        <ul id="navul">
+            <li><a href="#">首页 </a></li>
+            <br>
+            <li><a href="#">价格 </a></li>
+            <br>
+            <li><a href="#">文档 </a></li>
+            <br>
+            <li><a href="#">工具 </a></li>
+            <br>
+            <br>
+            <br>
+            <li><a href="#">登录 </a></li>
+        </ul>
+    </div>
+    <header class="opacity_play">
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <div class="navbar-brand"><a href="#" id="logo"><strong>fir.im</strong></a></div>
+                    <button type="button" class="navbar-toggle in navbar-right" data-toggle="collapse" onclick="navDown()" id="navbutton">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="lead" style="font-size: 30px">{</li>
+                        <li><a href="#">首页 </a><span><strong>,</strong></span></li>
+                        <li><a href="#">价格 </a><span><strong>,</strong></span></li>
+                        <li><a href="#">文档 </a><span><strong>,</strong></span></li>
+                        <li><a href="#">工具 </a><span><strong>,</strong></span></li>
+                        <li><a href="#">帮助中心 </a><span><strong>,</strong></span></li>
+                        <li><a href="#">登录 </a><span><strong>,</strong></span></li>
+                        <li><a href="#">注册</a></li>
+                        <li class="lead" style="font-size: 30px">}</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="plane-wrapper center-block plane_play">
+                <img class="img-responsive" id="plane" src="Img/plane.svg">
+                <img id="propeller" src="Img/propeller.svg">
+            </div>
+        </div>
+        <div class="note">
+            <p id="notep"></p>
+            <!--<p>{</p>-->
+            <!--<p>&emsp;&emsp;return "fir.im"</p>-->
+            <!--<p>}</p>-->
+        </div>
+    </main>
+    <footer class="opacity_play">
+        <p>晋ICP备15006832号-1</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="../lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/myJs.js"></script>
+</body>
+</html>
